@@ -1,3 +1,141 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer components{
+    .menue-hover{
+        @apply hover:text-green-400 hover:cursor-pointer
+    }
+}
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 1;
+        transition-duration: 5s;
+        transition-delay: 5s;
+
+        transform: translate (0 );
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate(-1000px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-1500px,0,0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(1500px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate3d(1000px , 0 , 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        transition-duration: 5s;
+        transition-delay: 5s;
+    }
+}
+  /* Tailwind class for custom animations */
+  .animate-fadeSlide {
+    animation: fadeSlide 4s ease-in-out infinite;
+}
+
+/* Delay the second <a> to show after the first one */
+.animate-delay-200 {
+    animation: slideInRight 4s ease-in-out infinite 4s;
+}
+
+.no-scroll {
+  overflow-x: hidden;
+  height: 100vh; /* Prevent scrolling completely */
+}
+
+
+/* Basic styles */
+.burger {
+    transition: all 300ms ease;
+  }
+  
+  /* Initial state for all lines */
+  .line {
+    transition: all 300ms ease;
+  }
+  
+  /* Cross transform for the first and third lines when burger is clicked */
+  .burger.open .line:nth-child(1) {
+    transform: translateY(9px) rotate(-45deg) ;
+  }
+  
+  .burger.open .line:nth-child(3) {
+    transform:  translateY(-9px) rotate(45deg);
+  }
+  
+  /* Hide and move the second line when burger is clicked */
+  .burger.open .line:nth-child(2) {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+ 
+ 
+
+/* Progress bar inside each bullet */
+/* Bullet container */
+.swiper-pagination-bullet {
+  width: 35px !important;
+  height: 6px !important;
+  border-radius: 6px !important;
+  background: rgb(116, 116, 115) !important; /* No background for container */
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Progress bar inside bullet */
+.swiper-pagination-bullet .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: #dbdad703; /* Progress color for inactive */
+  transform: scaleX(0); /* Start empty */
+  transform-origin: left;
+  transition: transform 3s linear; /* Match autoplay duration */
+}
+
+/* Active bullet animation */
+.swiper-pagination-bullet-active .progress-bar {
+  background: #ffffff; /* Active progress color */
+  transform: scaleX(1); /* Fully fill */
+}
+
+.menu {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+}
+
+.menu::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
+.card:hover {
+  & div>img{
+     transform: translate(1.4 , 1.4);
+  }
+}
+.txt {
+  color:#333333;
+}
+.submenu-right-ins{
+  width: calc( 100% - 288px  );
+}
