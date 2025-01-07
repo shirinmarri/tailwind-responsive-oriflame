@@ -136,6 +136,10 @@
 .txt {
   color:#333333;
 }
-.submenu-right-ins{
-  width: calc( 100% - 288px  );
+.online-chat{
+  background-color: #333333 !important;
+  z-index: 999999;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
 }

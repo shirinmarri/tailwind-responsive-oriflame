@@ -36,225 +36,302 @@
                   <div class="line w-[20px] h-[1px] bg-gray-800 rounded"></div>
                   <div class="line w-[20px] h-[1px] bg-gray-800 rounded"></div>
                 
-                  <!-- Submenu and Megamenu start-->
-                  <div class="submenu no-scroll absolute hidden opacity-0 transition-opacity duration-300 top-14 left-0 w-full h-screen z-10 bg-gray-600/50 overflow-y-scroll">
-
-                    <ul class="megamenu w-72 h-full bg-white relative">
-                     
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#e8f5f0] ">
-                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[13px] ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CatalogueIcon"><path d="M6 9.653a1.5 1.5 0 0 1 1.712-1.485l1.5.214A1.5 1.5 0 0 1 10.5 9.867v4.98a1.5 1.5 0 0 1-1.712 1.485l-1.5-.214A1.5 1.5 0 0 1 6 14.633zm1.57-.495a.5.5 0 0 0-.57.495v4.98a.5.5 0 0 0 .43.495l1.5.214a.5.5 0 0 0 .57-.495v-4.98a.5.5 0 0 0-.43-.495zm10.425-.228a.5.5 0 0 1-.424.565l-3.5.5a.5.5 0 1 1-.142-.99l3.5-.5a.5.5 0 0 1 .566.424m0 3.001a.5.5 0 0 1-.424.565l-3.5.5a.5.5 0 1 1-.142-.99l3.5-.5a.5.5 0 0 1 .566.424m-.425 3.566a.5.5 0 0 0-.14-.99l-3.5.5a.5.5 0 1 0 .14.99z"></path><path d="M11.693 19.751q.143-.07.281-.15c.13.084.26.153.409.215.386.16.79.163 1.137.11l5.208-.801A1.5 1.5 0 0 0 20 17.642V5.666a1.5 1.5 0 0 0-1.728-1.483l-5.345.822a2.1 2.1 0 0 0-.661.187 2 2 0 0 0-.27.16q-.12-.08-.248-.14a2.8 2.8 0 0 0-.672-.206l-5.348-.823A1.5 1.5 0 0 0 4 5.666v11.976c0 .74.54 1.37 1.272 1.483l5.145.791c.401.062.856.04 1.276-.165M5 5.666a.5.5 0 0 1 .576-.495l5.335.821c.19.04.308.075.408.123a1 1 0 0 1 .181.112V18.72c-.087.05-.166.094-.247.133-.185.09-.42.115-.684.075l-5.145-.792A.5.5 0 0 1 5 17.642zm7.5 13.084V6.225a1 1 0 0 1 .203-.133c.088-.043.19-.072.366-.097h.007l5.348-.824a.5.5 0 0 1 .576.495v11.976a.5.5 0 0 1-.424.494l-5.208.801c-.237.037-.44.023-.6-.044a1.5 1.5 0 0 1-.268-.143"></path></svg>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">eCatalogue</span>
-                          <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                          focusable="false"
-                          aria-hidden="true"
-                          viewBox="0 0 24 24"
-                          data-testid="ArrowRightThinIcon"
-                        >
-                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                        </svg>
-                        </div>
-                        <div class="submenu-right-ecat w-[463px] h-[805px] bg-white absolute top-0 left-[288px] flex flex-col items-center gap-6 z-40 border-gray-500 ">  
-                          <div class="w-[330px] h-[295px] object-cover flex flex-col justify-center items-center">
-                          <img src="./public/images/ecat.jpg" class="w-40 h-56 rounded-2xl" alt="">
-                          <p class="text-[#555555]">05/12 - 02/01</p>
-                          <h6 class="txt text-lg uppercase font-bold">Catalogue 17</h6>
-
-                          </div>
-                          <div>
-                          <p class="txt text-base font-medium w-[330px] h-[55px] ">See more e-catalogues, magazines and brochures</p>
-                          <button class="w-[330px] h-[45px] border-2 txt my-3 text-sm font-semibold border-gray-700 rounded-full uppercase">See all catalogues</button>
-
-
-                          </div>
-
-                        </div>
-
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#e8f5f0] ">
-                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 ms-2 mt-[13px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M13.133 4a1.5 1.5 0 0 0-1.489 1.686L13 16.531V18.5a1.5 1.5 0 0 0 1.5 1.5h2a1.5 1.5 0 0 0 1.5-1.5v-1.969l1.356-10.845A1.5 1.5 0 0 0 17.867 4zM14 18.5V17h3v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5m4.363-12.938L17.06 16h-3.12L12.637 5.562A.5.5 0 0 1 13.133 5h4.734a.5.5 0 0 1 .496.562M6 18.5a1.5 1.5 0 0 0 3 0V8.651l1.315-1.972c.478-.718.268-1.732-.52-2.156a4 4 0 0 0-.978-.39C8.448 4.041 8.032 4 7.5 4c-.527 0-.938.045-1.302.137a4 4 0 0 0-.96.385c-.793.423-1.026 1.448-.537 2.18L6 8.652zM5.709 5.405c.258-.137.475-.234.734-.299C6.704 5.04 7.029 5 7.5 5c.482 0 .812.038 1.078.103.263.065.483.16.744.3.24.13.33.467.161.72L8.233 8H6.767L5.533 6.148a.52.52 0 0 1 .176-.743M7 9h1v9.5a.5.5 0 0 1-1 0z"></path></svg>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Inspiration</span>
-                          <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                          focusable="false"
-                          aria-hidden="true"
-                          viewBox="0 0 24 24"
-                          data-testid="ArrowRightThinIcon"
-                        >
-                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                        </svg>
-                        </div>
-                        <div class="submenu-right-ins  h-[805px] bg-red-500 absolute top-0 left-[288px] flex items-center border-gray-500 "></div>
-                        
-
-                      </li>
-                      <li class="flex w-72 h-[54px] bg-white hover:bg-[#e8f5f0] pb-1">
-                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w- h-6 mt-[13px] ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DiscountTagIcon"><path d="M15.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M15 8.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0"></path><path d="M13.328 5a2.5 2.5 0 0 0-1.767.732l-6.5 6.5a2.5 2.5 0 0 0 0 3.536l3.171 3.171a2.5 2.5 0 0 0 3.536 0l6.5-6.5A2.5 2.5 0 0 0 19 10.672V6.5A1.5 1.5 0 0 0 17.5 5zm-1.06 1.44a1.5 1.5 0 0 1 1.06-.44H17.5a.5.5 0 0 1 .5.5v4.172a1.5 1.5 0 0 1-.44 1.06l-6.5 6.5a1.5 1.5 0 0 1-2.12 0l-3.172-3.171a1.5 1.5 0 0 1 0-2.122z"></path></svg>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Best Offers</span>
-                          <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                          focusable="false"
-                          aria-hidden="true"
-                          viewBox="0 0 24 24"
-                          data-testid="ArrowRightThinIcon"
-                        >
-                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                        </svg>
-                        </div>
-
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#e8e7f7]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#685bc7] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Nutrition</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#effbfb]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#91e7e3] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Skincare</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#FBEFF4]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#e793b7] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Makeup</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#f4f3f2]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#b6ada5] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Fragrance</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#DFEAF3]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#2774AE] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Bath & Body</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#FDF6E8]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#F0C264] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Hair</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#FFECEA]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#FF8072] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Accessories</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#D9EBEC]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#007681] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Men</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="flex w-72 h-[50px] bg-white hover:bg-[#ECF8FC]">
-                        <div class="w-[5px] h-[42px] mt-1 bg-[#7ED1EA] rounded"></div>
-                        <div class="flex w-[283px] justify-between px-3 py-2">
-                          <span class="text-xl font-semibold leading-[28px]">Kids & Baby</span>
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowRightThinIcon"
-                          >
-                            <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
-                          </svg>
-                        </div>
-                      </li>
-                      <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Novelties</li>
-                      <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Icons</li>
-                      <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Bestsellers</li>
-                      <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Sample Shop</li>
-                      <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Outlet</li>
-                      <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Beauty Reward Programme</li>
-                      
-                      
-                    </ul>
-
-                  </div>
-                  <!-- Submenu and Megamenu end-->
+                 
 
                 </div>
+                 <!-- Submenu and Megamenu start-->
+                 <div id="submenu"  class="submenu no-scroll absolute hidden opacity-0 transition-opacity duration-300 top-14 left-0 w-full h-screen z-10 bg-gray-600/50 overflow-y-scroll">
+
+                  <ul id="megamenu" class="megamenu w-72 h-full bg-white relative">
+                   
+                    <li class="menu-item flex w-72 h-[50px] bg-white hover:bg-[#e8f5f0] ">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[13px] ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CatalogueIcon"><path d="M6 9.653a1.5 1.5 0 0 1 1.712-1.485l1.5.214A1.5 1.5 0 0 1 10.5 9.867v4.98a1.5 1.5 0 0 1-1.712 1.485l-1.5-.214A1.5 1.5 0 0 1 6 14.633zm1.57-.495a.5.5 0 0 0-.57.495v4.98a.5.5 0 0 0 .43.495l1.5.214a.5.5 0 0 0 .57-.495v-4.98a.5.5 0 0 0-.43-.495zm10.425-.228a.5.5 0 0 1-.424.565l-3.5.5a.5.5 0 1 1-.142-.99l3.5-.5a.5.5 0 0 1 .566.424m0 3.001a.5.5 0 0 1-.424.565l-3.5.5a.5.5 0 1 1-.142-.99l3.5-.5a.5.5 0 0 1 .566.424m-.425 3.566a.5.5 0 0 0-.14-.99l-3.5.5a.5.5 0 1 0 .14.99z"></path><path d="M11.693 19.751q.143-.07.281-.15c.13.084.26.153.409.215.386.16.79.163 1.137.11l5.208-.801A1.5 1.5 0 0 0 20 17.642V5.666a1.5 1.5 0 0 0-1.728-1.483l-5.345.822a2.1 2.1 0 0 0-.661.187 2 2 0 0 0-.27.16q-.12-.08-.248-.14a2.8 2.8 0 0 0-.672-.206l-5.348-.823A1.5 1.5 0 0 0 4 5.666v11.976c0 .74.54 1.37 1.272 1.483l5.145.791c.401.062.856.04 1.276-.165M5 5.666a.5.5 0 0 1 .576-.495l5.335.821c.19.04.308.075.408.123a1 1 0 0 1 .181.112V18.72c-.087.05-.166.094-.247.133-.185.09-.42.115-.684.075l-5.145-.792A.5.5 0 0 1 5 17.642zm7.5 13.084V6.225a1 1 0 0 1 .203-.133c.088-.043.19-.072.366-.097h.007l5.348-.824a.5.5 0 0 1 .576.495v11.976a.5.5 0 0 1-.424.494l-5.208.801c-.237.037-.44.023-.6-.044a1.5 1.5 0 0 1-.268-.143"></path></svg>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">eCatalogue</span>
+                        <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="ArrowRightThinIcon"
+                      >
+                        <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                      </svg>
+                      </div>
+                      <div class="submenu-right w-[463px] h-[805px] bg-white absolute top-0 left-[288px] flex flex-col items-center gap-6 z-20 border-gray-500 ">  
+                        <div class="w-[330px] h-[295px] object-cover flex flex-col justify-center items-center">
+                        <img src="./public/images/ecat.jpg" class="w-40 h-56 rounded-2xl" alt="">
+                        <p class="text-[#555555]">05/12 - 02/01</p>
+                        <h6 class="txt text-lg uppercase font-bold">Catalogue 17</h6>
+
+                        </div>
+                        <div>
+                        <p class="txt text-base font-medium w-[330px] h-[55px] ">See more e-catalogues, magazines and brochures</p>
+                        <button class="w-[330px] h-[45px] border-2 txt my-3 text-sm font-semibold border-gray-700 rounded-full uppercase">See all catalogues</button>
+
+
+                        </div>
+
+                      </div>
+
+                    </li>
+                    <li class="menu-item flex w-72 h-[50px] bg-white hover:bg-[#e8f5f0]">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 ms-2 mt-[13px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M13.133 4a1.5 1.5 0 0 0-1.489 1.686L13 16.531V18.5a1.5 1.5 0 0 0 1.5 1.5h2a1.5 1.5 0 0 0 1.5-1.5v-1.969l1.356-10.845A1.5 1.5 0 0 0 17.867 4zM14 18.5V17h3v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5m4.363-12.938L17.06 16h-3.12L12.637 5.562A.5.5 0 0 1 13.133 5h4.734a.5.5 0 0 1 .496.562M6 18.5a1.5 1.5 0 0 0 3 0V8.651l1.315-1.972c.478-.718.268-1.732-.52-2.156a4 4 0 0 0-.978-.39C8.448 4.041 8.032 4 7.5 4c-.527 0-.938.045-1.302.137a4 4 0 0 0-.96.385c-.793.423-1.026 1.448-.537 2.18L6 8.652zM5.709 5.405c.258-.137.475-.234.734-.299C6.704 5.04 7.029 5 7.5 5c.482 0 .812.038 1.078.103.263.065.483.16.744.3.24.13.33.467.161.72L8.233 8H6.767L5.533 6.148a.52.52 0 0 1 .176-.743M7 9h1v9.5a.5.5 0 0 1-1 0z"></path></svg>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Inspiration</span>
+                        <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="ArrowRightThinIcon"
+                      >
+                        <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                      </svg>
+                      </div>
+                      <div class="submenu-right w-[800px] h-[805px] bg-white absolute top-0 left-[288px] hidden flex-col items-center gap-6 p-6 border-gray-500 ">  
+                        <div class="w-full h-1/2 flex flex-row p-6 gap-6">
+                            <div class="w-40 h-72 ">
+                              <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu1.webp" alt="">
+                              <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                            </div>
+                            <div class="w-40 h-72 ">
+                              <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu2.webp" alt="">
+                              <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                            </div>
+                            <div class="w-40 h-72 ">
+                              <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu3.webp" alt="">
+                              <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                            </div>
+                            <div class="w-40 h-72 ">
+                              <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu4.webp" alt="">
+                              <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                            </div>
+                            <div class="w-40 h-72 ">
+                              <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu5.webp" alt="">
+                              <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                            </div>
+                            <div class="w-40 h-72 ">
+                              <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu6.webp" alt="">
+                              <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                            </div>
+                           
+                        
+                        
+
+                        </div>
+                        <div class="w-full h-1/2 flex flex-row p-6 gap-6">
+                          
+                         
+                          <div class="w-40 h-72 ">
+                            <img class="w-40 h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu7.webp" alt="">
+                            <h6 class="uppercase text-lg txt">Beauty Insights Hub</h6>
+                          </div>
+                      
+                      
+
+                      </div>
+                      
+
+                      </div>
+                      
+
+                    </li>
+                    <li class="menu-item flex w-72 h-[54px] bg-white hover:bg-[#e8f5f0] pb-1">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w- h-6 mt-[13px] ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DiscountTagIcon"><path d="M15.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M15 8.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0"></path><path d="M13.328 5a2.5 2.5 0 0 0-1.767.732l-6.5 6.5a2.5 2.5 0 0 0 0 3.536l3.171 3.171a2.5 2.5 0 0 0 3.536 0l6.5-6.5A2.5 2.5 0 0 0 19 10.672V6.5A1.5 1.5 0 0 0 17.5 5zm-1.06 1.44a1.5 1.5 0 0 1 1.06-.44H17.5a.5.5 0 0 1 .5.5v4.172a1.5 1.5 0 0 1-.44 1.06l-6.5 6.5a1.5 1.5 0 0 1-2.12 0l-3.172-3.171a1.5 1.5 0 0 1 0-2.122z"></path></svg>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Best Offers</span>
+                        <svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                        focusable="false"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        data-testid="ArrowRightThinIcon"
+                      >
+                        <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                      </svg>
+                      </div>
+
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#e8e7f7]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#685bc7] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Nutrition</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                      <div class="submenu-right w-[556px] h-[805px] bg-white absolute top-0 left-[288px]  hidden border-gray-500 ">  
+                      
+                          <div class="w-[556px] h-[805px] flex flex-row p-6 gap-6">
+                         
+                                <img class="w-full h-56 rounded-xl font-semibold justify-center" src="./public/images/submenu-4.png" alt="">
+                              
+                                            
+                          
+                          
+  
+                        
+                    
+                      
+                        </div>
+                        
+
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#effbfb]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#91e7e3] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Skincare</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                      <div class="submenu-right w-[463px] h-[805px] bg-white absolute top-0 left-[288px] hidden flex-col items-center gap-6 z-20 border-gray-500 ">  
+                        <div class="w-[330px] h-[295px] object-cover flex flex-col justify-center items-center">
+                        <img src="./public/images/ecat.jpg" class="w-40 h-56 rounded-2xl" alt="">
+                        <p class="text-[#555555]">05/12 - 02/01</p>
+                        <h6 class="txt text-lg uppercase font-bold">Catalogue 17</h6>
+
+                        </div>
+                        <div>
+                        <p class="txt text-base font-medium w-[330px] h-[55px] ">See more e-catalogues, magazines and brochures</p>
+                        <button class="w-[330px] h-[45px] border-2 txt my-3 text-sm font-semibold border-gray-700 rounded-full uppercase">See all catalogues</button>
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="menu-item flex w-72 h-[50px] bg-white hover:bg-[#FBEFF4]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#e793b7] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Makeup</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#f4f3f2]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#b6ada5] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Fragrance</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#DFEAF3]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#2774AE] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Bath & Body</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#FDF6E8]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#F0C264] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Hair</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#FFECEA]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#FF8072] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Accessories</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#D9EBEC]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#007681] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Men</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="menu-item  flex w-72 h-[50px] bg-white hover:bg-[#ECF8FC]">
+                      <div class="w-[5px] h-[42px] mt-1 bg-[#7ED1EA] rounded"></div>
+                      <div class="flex w-[283px] justify-between px-3 py-2">
+                        <span class="text-xl font-semibold leading-[28px]">Kids & Baby</span>
+                        <svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[5px]"
+                          focusable="false"
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          data-testid="ArrowRightThinIcon"
+                        >
+                          <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                      </div>
+                    </li>
+                    <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Novelties</li>
+                    <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Icons</li>
+                    <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Bestsellers</li>
+                    <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Sample Shop</li>
+                    <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Outlet</li>
+                    <li class="w-72 h-[50px] px-4 py-3 font-semibold bg-[#F5f5f5] text-[#555555] text-base hover:bg-white">Beauty Reward Programme</li>
+                    
+                    
+                  </ul>
+
+                </div>
+                <!-- Submenu and Megamenu end-->
                 
                   
                 <a href="index.html" class="logo w-3/4 h-full px-3 ">
@@ -1373,8 +1450,14 @@ Because happiness looks good on everyone!
 
 
 
- <!-- burger menu script start -->
+
 </div>
+  <!-- online-chat-buttom start -->
+  <div class=" online-chat w-14 h-14 rounded-full  fixed right-10 bottom-10  z-50" >
+    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-yc4ipy w-8 h-8 fill-white" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="BubbleHelpFilledIcon"><path d="M17.805 15.881q-.14.27-.266.523c-.192.428-.14.768.071 1.052.237.319.723.63 1.513.83a.5.5 0 0 1 .036.96c-.706.237-1.412.33-2.153.185-.653-.127-1.301-.432-1.978-.928a7.2 7.2 0 0 1-3.24.769c-4.032 0-7.288-3.314-7.288-7.386C4.5 7.813 7.756 4.5 11.788 4.5s7.288 3.313 7.288 7.386c0 1.53-.69 2.868-1.271 3.995"></path></svg>
+   </div>
+   <!-- online-chat- buttom end -->
+ <!-- burger menu script start -->
 
 <script>
 const burger = document.querySelector('.burger');
@@ -1391,7 +1474,7 @@ burger.addEventListener('click', function () {
 });
 
 </script>
- <!-- burger menu script start -->
+ <!-- burger menu script end -->
 
 <!-- swipper script start-->
  <script src="swiper/swiper-bundle.min.js"></script>
@@ -1468,6 +1551,50 @@ function scrollRight() {
       });
     </script>
      <!-- slider script end -->
+      <!-- submenu start -->
+
+      <script>
+     document.addEventListener("DOMContentLoaded", () => {
+  const menuItems = document.querySelectorAll(".menu-item");
+  const submenu = document.getElementById("submenu");
+  const submenuRights = document.querySelectorAll(".submenu-right");
+
+  // Show only the first submenu by default
+  function setInitialSubmenuState() {
+    submenuRights.forEach((submenu, index) => {
+      if (index === 0) {
+        submenu.classList.remove("hidden");
+      } else {
+        submenu.classList.add("hidden");
+      }
+    });
+  }
+
+  // Handle the visibility of the submenu when a menu item is clicked
+  menuItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      submenuRights.forEach((submenu) => submenu.classList.add("hidden")); // Hide all submenus
+      const submenuRight = item.querySelector(".submenu-right");
+      if (submenuRight) {
+        submenuRight.classList.remove("hidden"); // Show clicked submenu
+      }
+    });
+  });
+
+  // Handle the visibility when the submenu is opened (e.g., via burger click)
+  document.getElementById("burger").addEventListener("click", () => {
+    submenu.classList.remove("hidden");
+    submenu.classList.add("opacity-100"); // Optional for transition effect
+    setInitialSubmenuState(); // Reset the submenu state to show the first submenu
+  });
+
+  // Initial setup
+  setInitialSubmenuState();
+});
+
+
+     </script> 
+     <!-- submenu ends -->
 
     
 
