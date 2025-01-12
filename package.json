@@ -10,6 +10,7 @@
     "tailpath": "npx tailwindcss -i ./public/tailwind/tailwind.css -o ./public/css/main.css --watch"
   },
   "devDependencies": {
+    "daisyui": "^4.12.23",
     "vite": "^6.0.1"
   },
   "dependencies": {
