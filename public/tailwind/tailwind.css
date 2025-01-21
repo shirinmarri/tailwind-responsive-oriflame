@@ -150,3 +150,13 @@
 .online-chat:hover p {
   opacity: 1;
 }
+.shipping ,.search{
+  background-color: #f0effc;
+}
+.dark .shipping{
+  background-color: #475569 !important; /* Equivalent to bg-slate-600 */
+}
+.dark .search{
+  background-color: #475569 !important; /* Equivalent to bg-slate-600 */
+}
+
