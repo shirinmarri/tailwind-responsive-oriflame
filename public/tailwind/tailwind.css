@@ -151,12 +151,26 @@
   opacity: 1;
 }
 .shipping ,.search{
-  background-color: #f0effc;
+  background-color: white;
 }
 .dark .shipping{
   background-color: #475569 !important; /* Equivalent to bg-slate-600 */
 }
 .dark .search{
   background-color: #475569 !important; /* Equivalent to bg-slate-600 */
+}
+.swiper-button-next , .swiper-button-prev{
+  width: 38px !important;
+  height: 38px !important;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 1px #c0c2c5;
+  color: darkslategrey !important;
+  position: absolute;
+  top: 240px;
+  &:after{
+    font-size: 20px !important;
+  }
 }
 

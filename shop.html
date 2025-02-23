@@ -29,14 +29,15 @@
    </div>
         <!-- firs part of header end-->
          <!-- search-part start -->
-          <div class="search w-full  h-[66px] flex  !importan justify-center items-center relative">
+          <div class="search w-full  h-[66px] flex  justify-center items-center relative bg-white">
+            <!-- dark/light mode icon start -->
             <label class="swap swap-rotate">
               <!-- this hidden checkbox controls the state -->
               <input type="checkbox" class="theme-controller" value="dark" />
             
               <!-- sun icon -->
               <svg
-                class="swap-off h-10 w-10 fill-current"
+                class="swap-off h-6 w-6 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">
                 <path
@@ -45,14 +46,16 @@
             
               <!-- moon icon -->
               <svg
-                class="swap-on h-10 w-10 fill-current"
+                class="swap-on h-6 w-6 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">
                 <path
                   d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
               </svg>
             </label>
-              <div class="left-header w-1/2 lg:w-1/5 h-full flex ps-3 pe-11 lg:px-4">
+            <!-- dark/light mode icon end -->
+
+              <div class="left-header w-1/2 md:w-1/4 h-full flex ps-3 pe-11 lg:px-4">
                 <div class="burger  flex flex-col justify-center items-center w-1/4 h-full cursor-pointer space-y-2">
                   <!-- Burger Lines -->
                   <div class="line w-[20px] h-[1px] bg-current  rounded"></div>
@@ -63,11 +66,17 @@
 
                 </div>
                  <!-- Submenu and Megamenu start-->
-                 <div id="submenu"  class="submenu no-scroll absolute hidden opacity-0 transition-opacity duration-300 top-14 left-0 w-full h-screen z-10 bg-gray-600/50 overflow-y-scroll">
+                 <div id="submenu"  class="submenu no-scroll absolute hidden opacity-0 transition-opacity duration-300 top-13 left-0 w-full h-screen z-10 bg-gray-600/50 overflow-y-scroll">
 
                   <ul id="megamenu" class="megamenu w-72 h-full bg-white relative">
                    
-                    <li class="menu-item flex w-72 h-[50px] bg-white hover:bg-[#e8f5f0] ">
+                    <li>
+                      <button class="w-64 h-[100px] m-4 bg-red-400 shadow-md rounded-md flex lg:hidden">
+                        <img src="./public/images/Normal.jpg" class="w-1/3 h-full rounded-s-md" alt="">
+  
+                      </button>
+                    </li>
+                    <li class="menu-item hidden lg:flex w-72 h-[50px] bg-white hover:bg-[#e8f5f0] ">
                       <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 mt-[13px] ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CatalogueIcon"><path d="M6 9.653a1.5 1.5 0 0 1 1.712-1.485l1.5.214A1.5 1.5 0 0 1 10.5 9.867v4.98a1.5 1.5 0 0 1-1.712 1.485l-1.5-.214A1.5 1.5 0 0 1 6 14.633zm1.57-.495a.5.5 0 0 0-.57.495v4.98a.5.5 0 0 0 .43.495l1.5.214a.5.5 0 0 0 .57-.495v-4.98a.5.5 0 0 0-.43-.495zm10.425-.228a.5.5 0 0 1-.424.565l-3.5.5a.5.5 0 1 1-.142-.99l3.5-.5a.5.5 0 0 1 .566.424m0 3.001a.5.5 0 0 1-.424.565l-3.5.5a.5.5 0 1 1-.142-.99l3.5-.5a.5.5 0 0 1 .566.424m-.425 3.566a.5.5 0 0 0-.14-.99l-3.5.5a.5.5 0 1 0 .14.99z"></path><path d="M11.693 19.751q.143-.07.281-.15c.13.084.26.153.409.215.386.16.79.163 1.137.11l5.208-.801A1.5 1.5 0 0 0 20 17.642V5.666a1.5 1.5 0 0 0-1.728-1.483l-5.345.822a2.1 2.1 0 0 0-.661.187 2 2 0 0 0-.27.16q-.12-.08-.248-.14a2.8 2.8 0 0 0-.672-.206l-5.348-.823A1.5 1.5 0 0 0 4 5.666v11.976c0 .74.54 1.37 1.272 1.483l5.145.791c.401.062.856.04 1.276-.165M5 5.666a.5.5 0 0 1 .576-.495l5.335.821c.19.04.308.075.408.123a1 1 0 0 1 .181.112V18.72c-.087.05-.166.094-.247.133-.185.09-.42.115-.684.075l-5.145-.792A.5.5 0 0 1 5 17.642zm7.5 13.084V6.225a1 1 0 0 1 .203-.133c.088-.043.19-.072.366-.097h.007l5.348-.824a.5.5 0 0 1 .576.495v11.976a.5.5 0 0 1-.424.494l-5.208.801c-.237.037-.44.023-.6-.044a1.5 1.5 0 0 1-.268-.143"></path></svg>
                       <div class="flex w-[283px] justify-between px-3 py-2">
                         <span class="text-xl font-semibold leading-[28px]">eCatalogue</span>
@@ -452,7 +461,7 @@
                 <!-- Submenu and Megamenu end-->
                 
                   
-                <a href="index.html" class="logo w-3/4 h-full px-3 ">
+                <a href="index.html" class="logo  ">
                      
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="oriflame-logo h-full w-full fill-current" viewBox="0 0 173 64" aria-hidden="true" width="260"  height="96" >
   <path d="M74.912 45.609l-1.594-4.904h-0.981l-1.594 4.904-1.594-4.904h-1.226l2.207 6.621h0.981l1.716-4.659 1.594 4.659h0.981l2.207-6.621h-1.226z">
@@ -486,29 +495,51 @@
                    
                 </a>
               </div>
-              <div class="search hidden px-8 lg:flex lg:w-3/5 h-full ">
-                <div class=" bg-gray-100  w-full h-[42px] rounded-[42px] mt-3 px-3  gap-1 hidden lg:flex">
+              <div class="search hidden px-8 md:flex md:w-2/4 h-full ">
+                <div class=" bg-gray-100  w-full h-[42px] rounded-[42px] mt-3 px-3  gap-1 hidden md:flex">
                     <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 fill-gray-800 mt-[9px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="Presentation-top-area-search"><path d="M14.874 15.582a6 6 0 1 1 .707-.707l3.273 3.271a.5.5 0 0 1-.708.708zM16 11a5 5 0 1 0-10 0 5 5 0 0 0 10 0"></path></svg>
                     <input type="search" class="  bg-gray-100 w-[90%] border-0 outline-0" placeholder="Search 60+ brands, 1000+ beauty and nutrition products">
                 </div>
                
               </div>
-              <div class="right w-1/2 ps-28 lg:w-1/5 h-full flex justify-between items-center lg:ps-4  gap-1">
-                <div class="w-1/3">
-                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-8 h-8 fill-gray-800 mt-[9px] lg:hidden" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="Presentation-top-area-search"><path d="M14.874 15.582a6 6 0 1 1 .707-.707l3.273 3.271a.5.5 0 0 1-.708.708zM16 11a5 5 0 1 0-10 0 5 5 0 0 0 10 0"></path></svg>
+              <div class="right w-1/2 ps-12 md:w-1/4 h-full flex justify-between  items-center pe-3  gap-1">
+                <div class="md:w-2/5">
+                    <!-- <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-8 h-8 fill-gray-800 mt-[9px] lg:hidden" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="Presentation-top-area-search"><path d="M14.874 15.582a6 6 0 1 1 .707-.707l3.273 3.271a.5.5 0 0 1-.708.708zM16 11a5 5 0 1 0-10 0 5 5 0 0 0 10 0"></path></svg> -->
                     
-                    <p class="hidden text-sm font-medium lg:block me-1 cursor-pointer">JOIN US</p>
+                    <p class="hidden text-sm font-medium md:block me-1 cursor-pointer">JOIN US</p>
                     
                 </div>
-                <div class="w-1/3">
-                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4 w-8 h-8 lg:hidden" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="UserIcon"><path d="M15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0m.948 12.248C14.34 19.972 13 20 12 20s-2.34-.028-3.448-.252c-.548-.11-1.131-.287-1.601-.595C6.452 18.825 6 18.282 6 17.5c0-2.065 2.09-4.5 6-4.5s6 2.435 6 4.5c0 .782-.452 1.325-.95 1.653-.47.308-1.054.484-1.602.595M17 17.5c0-1.38-1.5-3.5-5-3.5s-5 2.12-5 3.5 3 1.5 5 1.5 5-.12 5-1.5"></path></svg>
-                    <p class="hidden text-sm font-medium lg:block cursor-pointer"> SIGN IN</p>
+                <div class="md:w-2/5 hover:cursor-pointer">
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4 w-8 h-8 md:hidden" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="UserIcon"><path d="M15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0m.948 12.248C14.34 19.972 13 20 12 20s-2.34-.028-3.448-.252c-.548-.11-1.131-.287-1.601-.595C6.452 18.825 6 18.282 6 17.5c0-2.065 2.09-4.5 6-4.5s6 2.435 6 4.5c0 .782-.452 1.325-.95 1.653-.47.308-1.054.484-1.602.595M17 17.5c0-1.38-1.5-3.5-5-3.5s-5 2.12-5 3.5 3 1.5 5 1.5 5-.12 5-1.5"></path></svg>
+                    <p class="hidden text-sm font-medium md:block cursor-pointer"> SIGN IN</p>
                     </div>
-                <div class="w-1/3">
-                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4 w-8 h-8 fill-current hover:fill-gray-900 cursor-pointer" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AddToBagIcon"><path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path></svg>
-                </div>
+                    <div class="w-1/5 group h-14 px-4 ">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4 w-8 h-8 fill-current hover:fill-gray-900 cursor-pointer mt-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AddToBagIcon">
+                          <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
+                      </svg>
+                      <!-- starting basket part -->
+                      <div class="basket w-[400px] h-screen bg-slate-100 absolute top-[60px] right-0 z-[50] hidden group-hover:block">
+                        <p class="text-left text-xl font-semibold ps-3 pt-3">Shoping bag (0) </p>
+                        <div class="w-full h-3/5 flex flex-col justify-center items-center ">
+                          <p class="text-xl font-semibold text-center">Emptu bag</p>
+                          <p class="text-xs text-slate-400">-looking prety empty in your bag</p>
+                        
+                        </div>
+                        <button class="uppercase bg-slate-800 text-slate-100 m-5 w-[360px] h-10 rounded-full">go to basket</button>
+                        <button class="uppercase bg-slate-300 text-slate-500 mx-5 w-[360px] h-10 rounded-full">share your basket</button>
+
+                      </div>
+                      <!-- ending basket part -->
+                  </div>
 
               </div>
+             </div>
+            <div class="search flex md:hidden px-8 w-full h-[50px]  ">
+            <div class=" bg-gray-100  w-full h-[42px] rounded-[42px]  px-3  gap-1 md:hidden flex">
+                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5 w-6 h-6 fill-gray-800 mt-[9px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="Presentation-top-area-search"><path d="M14.874 15.582a6 6 0 1 1 .707-.707l3.273 3.271a.5.5 0 0 1-.708.708zM16 11a5 5 0 1 0-10 0 5 5 0 0 0 10 0"></path></svg>
+                <input type="search" class="  bg-gray-100 w-[90%] border-0 outline-0" placeholder="Search 60+ brands, 1000+ beauty and nutrition products">
+            </div>
+           
           </div>
 
       
@@ -519,30 +550,30 @@
 <!-- header end -->
 
 <!-- swiper start -->
-<div class="swiper mySwiper w-full h-[500px]">
+<div class="swiper mySwiper w-full ">
   <div class="swiper-wrapper w-full h-full">
     <div class="swiper-slide w-full h-full relative">
       <img src="./public/images/slider1.webp" class="w-full h-full object-cover">
-      <div class=" w-[350px] h-[250px] md:w-[450px]  absolute bottom-10 right-16 md:right-28 xl:top-32 xl:right-36  flex flex-col items-center justify-center  " > 
-        <p class="w-[350px] h-5 md:w-[450px] text-white text-xs text-center  mb-4">UNMISSABLE CHRISTMAS DEALS</p>
-        <h3 class="w-[350px] h-24 md:h-36 md:w-[450px] text-3xl md:text-5xl text-white text-center font-semibold">Find the perfect Christmas gifts</h3>
-        <button class="w-[150px] h-11 text-white bg-gray-700/[0.8] rounded-[44px] ">SHOP HERE</button>
+      <div class=" w-[350px]  md:w-[450px]  absolute bottom-10 right-16 md:right-28 xl:top-32 xl:right-36  flex flex-col items-center justify-center  " > 
+        <p class="w-[350px]  md:w-[450px] text-white text-xs text-center  mb-4">UNMISSABLE CHRISTMAS DEALS</p>
+        <h3 class="w-[350px]   md:w-[450px] text-xl md:text-5xl text-white text-center font-semibold">Find the perfect Christmas gifts</h3>
+        <button class="w-[150px] h-11 text-white bg-gray-900 hover:bg-gray-700/[0.8] rounded-[44px] ">SHOP HERE</button>
       </div>
     </div>
     <div class="swiper-slide relative">
       <img src="./public/images/slider2.webp" class="w-full h-full object-cover">
-      <div class=" w-[350px] h-[250px] md:w-[450px]  absolute bottom-10 right-16 md:right-28 xl:top-32 xl:right-36  flex flex-col items-center justify-center " > 
-        <p class="w-[350px] h-5 md:w-[450px] text-white text-xs text-center  mb-4">UNMISSABLE CHRISTMAS DEALS</p>
-        <h3 class="w-[350px] h-24 md:h-36 md:w-[450px] text-3xl md:text-5xl text-white text-center font-semibold">A dazzling party in Paris</h3>
-        <button class="w-[150px] h-11 text-white bg-gray-700/[0.8] rounded-[44px] ">SHOP NOW</button>
+      <div class=" w-[350px]  md:w-[450px]  absolute bottom-10 right-16 md:right-28 xl:top-32 xl:right-36  flex flex-col items-center justify-center " > 
+        <p class="w-[350px]  md:w-[450px] text-white text-xs text-center  mb-4">UNMISSABLE CHRISTMAS DEALS</p>
+        <h3 class="w-[350px]  md:h-36 md:w-[450px] text-xl md:text-5xl text-white text-center font-semibold">A dazzling party in Paris</h3>
+        <button class="w-[150px] h-11 text-white bg-gray-900 hover:bg-gray-700/[0.8] rounded-[44px] ">SHOP NOW</button>
       </div>
     </div>
     <div class="swiper-slide relative">
       <img src="./public/images/slider3.webp" class="w-full h-full object-cover">
-      <div class=" w-[350px] h-[250px] md:w-[450px]  absolute bottom-10 right-16 md:right-28 xl:top-32 xl:right-36  flex flex-col items-center justify-center " > 
+      <div class=" w-[350px]  md:w-[450px]  absolute bottom-10 right-16 md:right-28 xl:top-32 xl:right-36  flex flex-col items-center justify-center " > 
         <p class="w-[350px] h-5 md:w-[450px] text-white text-xs text-center  mb-4">NEW ECLAT FESTIVITÉ  </p>
         <h3 class="w-[350px] h-24 md:h-36 md:w-[450px] text-3xl md:text-5xl text-white text-center font-semibold">A dazzling party in Paris</h3>
-        <button class="w-[150px] h-11 text-white bg-gray-700/[0.8] rounded-[44px] ">SHOP NOW</button>
+        <button class="w-[150px] h-11 text-white  bg-gray-900 hover:bg-gray-700/[0.8] rounded-[44px] ">SHOP NOW</button>
       </div>
     </div>
   </div>
@@ -575,12 +606,12 @@
   
    <!-- menu end -->
     <!--  first grid cards start -->
-       <div class="titr w-full h-24 px-28 mt-10 relative flex items-center justify-center ">
-           <p class="text-current text-4xl leading-[96px] block font-bold">What's new</p>
+       <div class="titr w-full h-36  mt-10 relative flex items-center justify-center ">
+           <p class="text-current text-lg md:text-4xl leading-[96px] block font-bold">What's new</p>
            <button class="uppercase w-28 h-12 text-current border-2 rounded-[48px] border-current  font-semibold hidden md:block absolute right-28 top-7 ">view all</button>
 
        </div>
-       <div class="cards w-full  h-[800px] md:h-[400px]   px-11 xl:px-28 py-1 grid grid-cols-2 gap-4 md:grid-cols-[46%,25%,25%] xl:grid-cols-[39%,19%,19%,19%]">
+       <div class="cards w-full  md:h-[400px]   px-11 xl:px-28 py-1 grid grid-cols-2 gap-4 md:grid-cols-[46%,25%,25%] xl:grid-cols-[39%,19%,19%,19%]">
         <div class="col-span-2 md:col-span-1 relative">
           <img src="./public/images/cards-1-1.webp" class="w-full h-full rounded-lg cursor-pointer" alt="">
           <button class="absolute w-52 h-12 rounded-[48px] bg-[#a0722d] text-white font-semibold transition-all delay-300 bottom-8 left-1/2 transform -translate-x-1/2 hover:bg-[#e1c08a] hover:text-gray-900 ">BROWSE ECATALOGUE</button>
@@ -599,7 +630,7 @@
           </button>
           
          </div>
-         <div class="w-full h-1/3">
+         <div class="w-full ">
             <div class="w-full flex pt-2">
               <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
               <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -639,7 +670,7 @@
            </button>
            
           </div>
-          <div class="w-full h-1/3">
+          <div class="w-full ">
              <div class="w-full flex pt-2">
                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -704,11 +735,11 @@
     <!-- first grid cards end -->
      <!-- second grid cards start -->
      <div class="titr w-full h-24 px-28 mt-10 relative flex items-center justify-center ">
-      <p class=" text-4xl leading-[96px] block font-bold">Best offers</p>
+      <p class="text-lg md:text-4xl leading-[96px] block font-bold">Best offers</p>
       <button class="uppercase w-28 h-12  border-2 rounded-[48px]  border-current font-semibold hidden md:block absolute left-28 top-7 ">view all</button>
 
       </div>
-      <div class="cards w-full h-[1232px] md:h-[400px]  px-11 xl:px-28 py-1 grid grid-cols-2 gap-4 md:grid-cols-[25%,25%,46%] lg:grid-cols-[19%,19%,19%,39%] xl:grid-cols-[17%,17%,17%,17%,26%]">
+      <div class="cards w-full  md:h-[400px]   px-11 xl:px-28 py-1 grid grid-cols-2 gap-4 md:grid-cols-[25%,25%,46%] lg:grid-cols-[19%,19%,19%,39%] xl:grid-cols-[17%,17%,17%,17%,26%]">
         <div class="card h-[400px] hidden md:block col-span-1 cursor-pointer leading-6 group ">
           <div class="w-full h-2/3 relative rounded-lg overflow-hidden ">
            <img src="./public/images/card2-1.webp" class="w-full h-full rounded-lg transition-all duration-300  group-hover:scale-110" alt="">
@@ -722,7 +753,7 @@
            </button>
            
           </div>
-          <div class="w-full h-1/3">
+          <div class="w-full ">
              <div class="w-full flex pt-2">
                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#80cdd0] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#80cdd0] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -745,7 +776,7 @@
            
           </div>
          </div>
-         <div class="card h-[400px] hidden md:block col-span-1 cursor-pointer leading-6 group ">
+         <div class="card hidden md:block col-span-1 cursor-pointer leading-6 group ">
            <div class="w-full h-2/3 relative rounded-lg overflow-hidden">
             <img src="./public/images/card-2-2.webp" class="w-full h-full rounded-lg transition-all duration-300  group-hover:scale-110" alt="">
            
@@ -1019,16 +1050,16 @@
 
      <!-- second grid cards end -->
       <!-- 3th grid cards strt -->
-      <div class="titr w-full h-28 px-28 mt-10 relative flex items-center justify-center ">
-        <div class="w-[500px] h-[108px] flex flex-col items-center justify-center mb-6">
-        <h3 class=" text-4xl  font-semibold mb-4">Icons of our time </h3>
+      <div class="titr w-full px-28 mt-10 relative flex items-center justify-center ">
+        <div class="w-[500px] flex flex-col items-center justify-center mb-6">
+        <h3 class=" text-lg md:text-4xl  font-semibold mb-4">Icons of our time </h3>
         <p class=" font-normal text-sm">Say hello to our legendary products—iconic essentials you trust and reach for again and again. Discover the time-tested favourites our customers love most. </p>
 
         </div>
         <button class="uppercase w-28 h-12  border-2 rounded-[48px]  font-semibold hidden md:block border-current absolute right-6 bottom-4 ">view all</button>
 
     </div>
-    <div class="cards w-full  h-[1232px] md:h-[400px]   px-11 xl:px-28 py-1 grid grid-cols-2 gap-4 md:grid-cols-[38%,19%,19%,19%] lg:grid-cols-[33%,16%,16%,16%,16%]">
+    <div class="cards w-full  md:h-[400px]   px-11 xl:px-28 py-1 grid grid-cols-2 gap-4 md:grid-cols-[38%,19%,19%,19%] lg:grid-cols-[33%,16%,16%,16%,16%]">
 
      <div class="card h-[400px] col-span-2 md:col-span-1 ">
        <img src="./public/images/card3-1.webp" class="w-full h-full rounded-lg cursor-pointer" alt="">
@@ -1158,7 +1189,7 @@
          </button>
          
         </div>
-        <div class="w-full h-1/3">
+        <div class="w-full ">
            <div class="w-full flex pt-2">
              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
              <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -1184,70 +1215,135 @@
     </div>
     <!-- 3rth grid cards end -->
      <!-- Oriflame-on-me-swiper start -->
-     <div class="titr w-full h-24 px-28 mt-10 relative flex flex-col items-center justify-center ">
-      <p class=" text-4xl  block font-bold">#OriflameOnMe </p>
-      <span>Share your amazing looks with @oriflame and #OriflameOnMe</span>
-      <button class="uppercase w-28 h-12  border-2 rounded-[48px] border-current  font-semibold hidden md:block absolute right-6 bottom-4 ">view all</button>
-
-      </div>
-      <div class="swiper myslider w-full h-[564px]  mt-6 mx-6">
-        <div class="swiper-wrapper flex mx-6">
+     
+     <div class="hidden md:block">
+      <div class="titr w-full px-28 mt-10 relative flex flex-col items-center justify-center ">
+        <p class=" text-4xl  block font-bold">#OriflameOnMe </p>
+        <span>Share your amazing looks with @oriflame and #OriflameOnMe</span>
+        <button class="uppercase w-28 h-12  border-2 rounded-[48px] border-current  font-semibold hidden md:block absolute right-6 bottom-4 ">view all</button>
+  
+        </div>
+      <div class="swiper myslider w-full md:h-[564px]  mt-6 mx-6">
+        <div class="flex swiper-wrapper  mx-6">
           <div class="swiper-slide flex items-center justify-center object-cover">
-            <img src="./public/images/slide1.jpg" class="w-full h-[50%] rounded-lg mt-2 " alt="">
+            <img src="./public/images/slide1.jpg" class="w-full h-full md:h-[50%] rounded-lg mt-2 " alt="">
           </div>
           <div class="swiper-slide flex items-center justify-center ">
-            <img src="./public/images/slide2.jpg" class="w-full h-[50%] rounded-lg mt-56" alt="">
+            <img src="./public/images/slide2.jpg" class="w-full md:h-[50%] rounded-lg mt-56" alt="">
 
           </div>
           <div class="swiper-slide flex items-center justify-center">
-            <img src="./public/images/slide3.jpg" class="w-full h-[50%] rounded-lg mt-24" alt="">
+            <img src="./public/images/slide3.jpg" class="w-full md:h-[50%] rounded-lg mt-24" alt="">
 
           </div>
           <div class="swiper-slide flex items-center justify-center">
-            <img src="./public/images/slide4 1.jpg" class="w-full h-[48%] rounded-lg mt-2" alt="">
-            <img src="./public/images/slide4-2.png" class="w-full h-[48%] rounded-lg mt-2" alt="">
+            <img src="./public/images/slide4 1.jpg" class="w-full md:h-[48%] rounded-lg mt-2" alt="">
+            <img src="./public/images/slide4-2.png" class="hidden md:block w-full md:h-[48%] rounded-lg mt-2" alt="">
 
 
           </div>
           <div class="swiper-slide flex items-center justify-center">
-            <img src="./public/images/slide5.jpg" class="w-full h-[50%] rounded-lg mt-8" alt="">
+            <img src="./public/images/slide5.jpg" class="w-full md:h-[50%] rounded-lg mt-8" alt="">
 
           </div>
           <div class="swiper-slide flex items-center justify-center ">
-            <img src="./public/images/slide6.jpg" class="w-full h-[50%] rounded-lg mt-56" alt="">
+            <img src="./public/images/slide6.jpg" class="w-full md:h-[50%] rounded-lg mt-56" alt="">
 
           </div>
-          <div class="swiper-slide flex items-center justify-center bg-slate-500">
-            <img src="./public/images/slide7.jpg" class="w-full h-[50%] rounded-lg mt-24" alt="">
+          <div class="swiper-slide flex items-center justify-center ">
+            <img src="./public/images/slide7.jpg" class="w-full md:h-[50%] rounded-lg mt-24" alt="">
 
           </div>
           <div class="swiper-slide flex items-center justify-center">
-            <img src="./public/images/slide8-1.jpg" class="w-full h-[48%] rounded-lg mt-2" alt="">
-            <img src="./public/images/slide8-2.jpg" class="w-full h-[48%] rounded-lg mt-2" alt="">
+            <img src="./public/images/slide8-1.jpg" class="w-full md:h-[48%] rounded-lg mt-2" alt="">
+            <img src="./public/images/slide8-2.jpg" class="hidden md:block w-full md:h-[48%] rounded-lg mt-2" alt="">
 
 
           </div>
         </div>
-        <div class="swiper-button-next slider-button-next w-10 h-10 rounded-xl bg-gray-400 absolute bottom-10 text-base"></div>
-        <div class="swiper-button-prev slider-button-prev  w-10 h-10 rounded-xl bg-gray-400 absolute bottom-10"></div>
+        <div class="swiper-button-next slider-button-next "></div>
+        <div class="swiper-button-prev slider-button-prev  "></div>
       </div>
+     </div>
+     <div class="md:hidden flex flex-col items-center">
+      <div class="titr w-full px-28 mt-10 relative flex flex-col items-center justify-center ">
+        <p class=" text-4xl  block font-bold">#OriflameOnMe </p>
+        <span>Share your amazing looks with @oriflame and #OriflameOnMe</span>
+        
+  
+        </div>
+      <div class="swiper myslider w-full h-[280px]  mt-6 mx-6">
+        <div class="flex swiper-wrapper  mx-6">
+          <div class="swiper-slide flex items-center justify-center object-cover">
+            <img src="./public/images/slide1.jpg" class="w-full h-full rounded-lg mt-2 " alt="">
+          </div>
+          <div class="swiper-slide flex items-center justify-center ">
+            <img src="./public/images/slide2.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./public/images/slide3.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./public/images/slide4 1.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+        
+
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+          
+            <img src="./public/images/slide4-2.png" class=" w-full h-full rounded-lg mt-2" alt="">
+
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./public/images/slide5.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center ">
+            <img src="./public/images/slide6.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center ">
+            <img src="./public/images/slide7.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./public/images/slide8-1.jpg" class="w-full h-full rounded-lg mt-2" alt="">
+
+
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./public/images/slide8-2.jpg" class=" w-full h-full rounded-lg mt-2" alt="">
+
+
+
+          </div>
+
+        </div>
+        <div class="swiper-button-next slider-button-next w-10 h-10 rounded-xl bg-gray-400 absolute bottom-10 text-base text-gray-800"></div>
+        <div class="swiper-button-prev slider-button-prev  w-10 h-10 rounded-xl bg-gray-400 absolute bottom-10 text-base text-gray-800"></div>
+      </div>
+      <button class="uppercase w-28 h-12  border-2 rounded-[48px] border-current  font-semibold mt-4 ">view all</button>
+     </div>
       
       
      <!-- Oriflame-on-me-swiper end -->
 
      <!-- last grid cards stRT -->
      <div class="titr w-full  px-9 mt-10 relative  flex flex-col items-center justify-center ">
-      <h3 class="  text-2xl lg:text-4xl lg:leading-[96px] block font-bold">Make wellbeing part of your daily life</h3>
+      <h3 class="  text-xl md:text-4xl md:leading-[96px] block font-bold">Make wellbeing part of your daily life</h3>
       <p class="text-sm w-full sm:w-[50%] justify-center">Wellosophy products are developed with ingredients scientifically proven to provide health benefits – to give you only what’s best. Shop with discounts now and relish in the benefits!</p>
       <button class="uppercase w-32 h-12  border-2 rounded-[48px] border-current  font-semibold hidden md:block absolute right-28 bottom-6 ">SHOP HERE</button>
 
   </div>
-  <div class="cards w-full  mt-6  px-9  py-1 grid grid-cols-2 gap-4 md:grid-cols-[46%,25%,25%] lg:grid-cols-[23%,23%,23%,23%] xl:grid-cols-[45%,16%,16%,16%]">
+  <div class="cards w-full md:h-[400px] mt-6  px-9  py-1 grid grid-cols-2 gap-4 md:grid-cols-[46%,25%,25%] lg:grid-cols-[23%,23%,23%,23%] xl:grid-cols-[45%,16%,16%,16%]">
    <div class="col-span-2 md:col-span-1 relative">
      <img src="./public/images/card4-1.webp" class="w-full h-full rounded-lg cursor-pointer object-cover" alt="">
      <button class="absolute w-32 h-12 rounded-[48px] bg-[#4e4d4b] text-white font-semibold transition-all delay-300 bottom-8 left-1/2 transform -translate-x-1/2 hover:bg-[#b7a8aa] hover:text-gray-900 ">SHOP NOW</button>
    </div>
-   <div class="card col-span-1 md:col-span-1 cursor-pointer leading-6 group ">
+   <div class="card h-full col-span-1 md:col-span-1 cursor-pointer leading-6 group ">
     <div class="w-full h-2/3 relative rounded-lg overflow-hidden ">
      <img src="./public/images/card4-2.webp" class="w-full h-full rounded-lg transition-all duration-300  group-hover:scale-110" alt="">
      <button class="absolute w-14 h-6 bg-gray-700 text-white text-sm top-3 left-3 rounded font-medium leading-6">NEW</button>
@@ -1260,7 +1356,7 @@
      </button>
      
     </div>
-    <div class="w-full h-1/3">
+    <div class="w-full ">
        <div class="w-full flex pt-2">
          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -1283,7 +1379,7 @@
      
     </div>
    </div>
-   <div class="card col-span-1 md:col-span-1 cursor-pointer leading-6 group ">
+   <div class="card h-full col-span-1 md:col-span-1 cursor-pointer leading-6 group ">
      <div class="w-full h-2/3 relative rounded-lg overflow-hidden">
       <img src="./public/images/card4-3.webp" class="w-full h-full rounded-lg transition-all duration-300  group-hover:scale-110" alt="">
      
@@ -1300,7 +1396,7 @@
       </button>
       
      </div>
-     <div class="w-full h-1/3">
+     <div class="w-full ">
         <div class="w-full flex pt-2">
           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -1323,8 +1419,8 @@
       
      </div>
     </div>
-    <div class="card  cursor-pointer leading-6 group hidden lg:block ">
-     <div class="w-full h-2/3 relative rounded-lg overflow-hidden">
+    <div class="card h-full cursor-pointer leading-6 group hidden lg:block ">
+     <div class="w-full h-2/3  relative rounded-lg overflow-hidden">
       <img src="./public/images/card4-4.webp" class="w-full h-full rounded-lg transition-all duration-300  group-hover:scale-110" alt="">
       <button class="absolute w-14 h-6 bg-gray-700 text-white text-sm top-3 left-3 rounded font-medium leading-6">NEW</button>
       <button class="absolute w-11 h-11 rounded-[44px] bg-white right-3 bottom-7 flex justify-center items-center group shadow">
@@ -1336,7 +1432,7 @@
       </button>
       
      </div>
-     <div class="w-full h-1/3">
+     <div class="w-full ">
         <div class="w-full flex pt-2">
           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium base-MuiOriStarRating-emptyStar base-MuiOriStarRating-star frontpage-19uhkat w-5 h-5 fill-[#e5e5e5] " focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavouriteFilledIcon" data-star-type="empty"><path d="m14.494 8.18-1.468-3.8c-.362-.938-1.69-.938-2.052 0l-1.468 3.8a1 1 0 0 1-.774.627l-4.152.667c-.968.156-1.264 1.405-.469 1.979l3.041 2.192a1 1 0 0 1 .392 1.027l-.961 4.345c-.222 1.001.925 1.734 1.74 1.113l3.07-2.34a1 1 0 0 1 1.213 0l3.07 2.34c.816.621 1.963-.112 1.741-1.113l-.96-4.345a1 1 0 0 1 .39-1.027l3.042-2.192c.795-.574.5-1.823-.47-1.979l-4.151-.667a1 1 0 0 1-.774-.627"></path></svg>
@@ -1347,7 +1443,7 @@
          
            
         </div>
-        <div class="w-full pt-2 flex flex-col gap-1">
+        <div class="w-full h-2/3 pt-2 flex flex-col gap-1">
           <span class="  uppercase text-xs">Novage+</span>
           <p class=" text-sm">Facial Oil Xmas 2024</p>
         </div>
@@ -1363,7 +1459,7 @@
   <!-- last grid cards end -->
    <!-- footer start -->
     <!-- first part of footer start -->
-    <div class="w-full  md:h-80  mt-5 md:mt-9 px-4 py-4 md:py-8 flex flex-col justify-center items-center">
+    <div class="w-full  mt-5 md:mt-9 px-4 py-4 md:py-8 flex flex-col justify-center items-center">
       <ul class=" flex flex-col md:flex-row md:justify-between  md:items-center  gap-y-4 md:gap-x-12 md:px-12 w-full lg:w-[1100px]">
         <li class="flex flex-row md:flex-col md:justify-center md:items-center gap-3 w-full md:w-1/3 text-center">
           
@@ -1444,8 +1540,8 @@ Because happiness looks good on everyone!
       </div>
       <!-- second part of footer end -->
        <!-- 3rth part of footer start -->
-        <div class="w-full h-[540px] flex flex-col justify-center items-center px-4 py-12">
-          <h3 class="text-4xl font-semibold" >Our top brands</h3>
+        <div class="w-full  flex flex-col justify-center items-center px-4 py-12">
+          <h3 class=" text-xl md:text-4xl font-semibold" >Our top brands</h3>
 
           <button class=" sm:hidden text-sm font-semibold px-6 py-3 rounded-3xl   w-40 h-12 border-2 mt-8 hover:bg-slate-200">
             View all brands
@@ -1479,16 +1575,16 @@ Because happiness looks good on everyone!
 
        <!-- 3rth part of footer end -->
         <!-- 4th part of footer start -->
-         <div class="w-full h-14 bg-teal-700 flex items-center justify-center gap-3">
+         <div class="w-full  bg-teal-700 flex items-center justify-center gap-3">
           <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4 w-8 h-8 fill-white" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SendIcon"><path d="M19.815 4.112a.5.5 0 0 1 .172.502l-3.5 15a.5.5 0 0 1-.84.24l-4.178-4.178-2.649 2.208A.5.5 0 0 1 8 17.5v-3.691l-3.724-1.862a.5.5 0 0 1 .013-.9l15-7a.5.5 0 0 1 .526.065M9 13.737v2.695l2.137-1.78 5.387-7.071zm7.093-7.095L5.649 11.515l2.785 1.393zm2.39.019-6.32 8.294 3.555 3.555z"></path></svg>
           <h6 class="text-white text-base font-semibold">Subscribe to our newsletter for inspiration & news!</h6>
          </div>
-         <div class="w-full h-[340px] bg-gray-100 px-4 py-8 flex justify-center ">
-          <div class="w-full  lg:w-1/2 lg:px-2 h-60 grid grid-cols-3 gap-4">
+         <div class="w-full  bg-gray-100 px-4 py-8 flex justify-center ">
+          <div class="w-full  lg:w-1/2 lg:px-2  grid grid-cols-3 gap-4">
 
             <div class=" flex flex-col gap-y-4">
                 <p class="uppercase text-sm font-bold">Support / Help</p>
-                <div class="w-1/2 h-44 flex flex-col gap-y-4">
+                <div class="w-1/2 flex flex-col gap-y-4">
                   <a class=" text-sm font-normal txt decoration-0">Support Centre</a>
                   <a class=" text-sm font-normal txt decoration-0"> Track your order</a>
                   <a class=" text-sm font-normal txt decoration-0">Claims & returns</a>
@@ -1497,7 +1593,7 @@ Because happiness looks good on everyone!
             <div class=" flex flex-col gap-y-4 ">
 
               <p class="uppercase text-sm font-bold txt">Corporate Info</p>
-              <div class="w-full h-44 flex flex-col gap-y-4">
+              <div class="w-full flex flex-col gap-y-4">
                 <a class=" text-sm font-normal txt decoration-0">Work With Us</a>
                 <a class=" text-sm font-normal txt decoration-0">Reach Your Happy Place</a>
                 <a class=" text-sm font-normal txt decoration-0">Sustainability</a>
@@ -1510,7 +1606,7 @@ Because happiness looks good on everyone!
           </div>
           <div class="flex flex-col gap-y-4 ">
             <p class="uppercase text-sm font-bold txt">Discover</p>
-            <div class="w-full h-44 flex flex-col gap-y-4">
+            <div class="w-full flex flex-col gap-y-4">
               <a class=" text-sm font-normal txt decoration-0">Join us as a Brand Partner</a>
               <a class=" text-sm font-normal txt decoration-0">Join us as a VIP Customer</a>
               <a class=" text-sm font-normal txt decoration-0">eCatalogue</a>
@@ -1518,7 +1614,7 @@ Because happiness looks good on everyone!
           </div>
                       
          </div>
-         <div class="w-60 h-28  items-center hidden md:flex md:flex-col">
+         <div class="w-60  items-center hidden md:flex md:flex-col">
           <h5 class="text-2xl font-bold mb-4 txt">Our apps</h5>
           <div class="w-[145px] h-[35px] flex gap-5">
             <div class="w-[35px] h-[35px]"> <img src="./public/images/app-1.svg" alt=""></div>
@@ -1534,22 +1630,22 @@ Because happiness looks good on everyone!
          </div>
          <!-- 4th part of footer end -->
           <!-- last pat of footer start -->
-           <div class="w-full h-[480px] py-4 md:h-[370px] flex flex-col items-center justify-center gap-4 md:gap-6">
-            <div class="w-40 h-24">
+           <div class="w-full  py-4  flex flex-col items-center justify-center gap-4 md:gap-6">
+            <div class="w-40">
               <h5 class="text-2xl text-current font-bold text-center"> Follow Us</h5>
-              <div class="w-40 h-12 flex justify-between">
-                <a class="w-[52px] h-[52px]" href="#">
+              <div class="w-40 flex justify-between">
+                <a class="w-[52px] " href="#">
                   <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit base-MuiOriSocialIcon-icon frontpage-foevli w-[52px] h-52px" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FacebookIcon"><path fill="#1877F2" d="M20.227 12.05A8.227 8.227 0 0 0 12 3.823a8.227 8.227 0 0 0-1.285 16.354v-5.749H8.626V12.05h2.089v-1.813c0-2.062 1.228-3.201 3.108-3.201.9 0 1.842.161 1.842.161v2.024h-1.037c-1.022 0-1.341.634-1.341 1.285v1.543h2.282l-.365 2.378h-1.917v5.749a8.23 8.23 0 0 0 6.942-8.127z"></path></svg>
                 </a>
-                <a class="w-[52px] h-[52px]" href="#">
+                <a class="w-[52px] " href="#">
                   <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit base-MuiOriSocialIcon-icon frontpage-foevli w-[52px] h-[52px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="YoutubeRingIcon"><path fill="red" d="m10.84 13.686 2.965-1.687-2.965-1.685z"></path><path fill="red" d="M12 3.75a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5m5.435 10.999c-.131.49-.513.874-1.003 1.007-.875.237-4.396.24-4.432.24s-3.558-.003-4.432-.239a1.43 1.43 0 0 1-1.003-1.009A15 15 0 0 1 6.328 12c-.005-.921.074-1.841.237-2.748.13-.491.513-.876 1.003-1.009.874-.236 4.396-.239 4.431-.239s3.557.003 4.432.239c.49.134.873.518 1.003 1.01.163.907.242 1.827.237 2.748.005.921-.074 1.841-.237 2.748z"></path></svg>
                 </a>
-                <a class="w-[52px] h-[52px]" href="#">
+                <a class="w-[52px] " href="#">
                   <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit base-MuiOriSocialIcon-icon frontpage-foevli w-[52px] h-[52px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="InstagramRingIcon"><path fill="#F00075" d="M16.421 8.655c-.103-.265-.226-.454-.424-.652s-.387-.321-.652-.424c-.2-.078-.5-.17-1.053-.195-.598-.027-.777-.033-2.292-.033s-1.694.006-2.292.033c-.553.025-.853.118-1.053.195-.265.103-.454.226-.652.424s-.321.387-.424.652c-.078.2-.17.5-.195 1.053-.027.598-.033.777-.033 2.292s.006 1.694.033 2.292c.025.553.118.853.195 1.053.103.265.226.454.424.652s.387.321.652.424c.2.078.5.17 1.053.195.598.027.777.033 2.292.033s1.694-.006 2.292-.033c.553-.025.853-.118 1.053-.195.265-.103.454-.226.652-.424s.321-.387.424-.652c.078-.2.17-.5.195-1.053.027-.598.033-.777.033-2.292s-.006-1.694-.033-2.292c-.025-.553-.118-.853-.195-1.053M12 14.913a2.913 2.913 0 1 1 0-5.827 2.913 2.913 0 0 1 0 5.827m3.028-5.26a.681.681 0 1 1 0-1.362.681.681 0 0 1 0 1.362"></path><path fill="#F00075" d="M13.891 12a1.89 1.89 0 1 1-3.782 0 1.89 1.89 0 0 1 3.782 0"></path><path fill="#F00075" d="M12 3.75a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5m5.638 10.588c-.027.604-.123 1.016-.263 1.377-.145.373-.339.689-.654 1.005s-.632.509-1.005.654c-.361.14-.773.236-1.377.264s-.798.034-2.338.034-1.733-.007-2.338-.034c-.604-.027-1.016-.123-1.377-.264-.373-.145-.689-.339-1.005-.654s-.509-.632-.654-1.005c-.14-.361-.236-.773-.264-1.377S6.329 13.54 6.329 12s.007-1.734.034-2.338.123-1.016.264-1.377c.145-.373.339-.689.654-1.005s.632-.509 1.005-.654c.361-.14.773-.236 1.377-.264s.798-.034 2.338-.034 1.734.007 2.338.034 1.016.123 1.377.264c.373.145.689.339 1.005.654s.509.632.654 1.005c.14.361.236.773.263 1.377s.034.798.034 2.338-.007 1.734-.034 2.338"></path></svg>
                 </a>
               </div>
             </div>
-            <div class="w-60 h-28  items-center flex  flex-col md:hidden">
+            <div class="w-60   items-center flex  flex-col md:hidden">
               <h5 class="text-2xl font-bold mb-4 text-current">Our apps</h5>
               <div class="w-[145px] h-[35px] flex gap-5">
                 <div class="w-[35px] h-[35px]"> <img src="./public/images/app-1.svg" alt=""></div>
@@ -1564,7 +1660,7 @@ Because happiness looks good on everyone!
              </div>
             
           
-            <div class="w-full px-4 md:w-[600px] md:h-[85px] md:px-0 text-current font-normal text-sm text-center">
+            <div class="w-full px-4 md:w-[600px] md:px-0 text-current font-normal text-sm text-center">
               <p>Oriflame is a leading beauty company selling direct. We are present in more than 60 countries, of which we are the market leader in more than a half. Oriflame has its origin in Sweden with corporate offices in Switzerland. We offer a wide range of high-quality beauty products as well as a unique opportunity to join our sales force and start your own business.</p>
             </div>
             <div class="w-full px-4 md:w-[600px] md:h-[47px] md:px-0 text-center">
@@ -1576,7 +1672,7 @@ Because happiness looks good on everyone!
               </p>
             </div>
           
-            <div class="w-[290px] h-[25px] flex gap-5"> 
+            <div class="w-[290px]  flex gap-5"> 
               <img class="w-[60px] h-[25px]" src="./public/images/visa.png" alt="">
               <img class="w-[38px] h-[25px]" src="./public/images/media.png" alt="">
               <img class="w-[85px] h-[25px]" src="./public/images/payppal.png" alt="">
@@ -1597,16 +1693,81 @@ Because happiness looks good on everyone!
 
 
 </div>
+<!-- Fixed Chat Button -->
+<div id="chatButton" class="online-chat w-14 h-14 rounded-full fixed right-10 bottom-10 z-30 flex items-center justify-center hover:w-[168px] transition-all duration-300 delay-200 group cursor-pointer">
+  <p class="text-white text-sm hidden group-hover:block opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500">CHAT WITH US</p>
+  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-yc4ipy w-8 h-8 fill-white" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="BubbleHelpFilledIcon">
+    <path d="M17.805 15.881q-.14.27-.266.523c-.192.428-.14.768.071 1.052.237.319.723.63 1.513.83a.5.5 0 0 1 .036.96c-.706.237-1.412.33-2.153.185-.653-.127-1.301-.432-1.978-.928a7.2 7.2 0 0 1-3.24.769c-4.032 0-7.288-3.314-7.288-7.386C4.5 7.813 7.756 4.5 11.788 4.5s7.288 3.313 7.288 7.386c0 1.53-.69 2.868-1.271 3.995"></path>
+  </svg>
+</div>
+
+
+<!-- Chat Box -->
+<div id="chatBox" class="fixed right-10 bottom-24 w-[400px] h-[450px] bg-white shadow-lg rounded-lg z-[100] hidden flex-col ">
+  <!-- Chat Header -->
+  <div class="flex justify-between items-center p-4 border-b bg-slate-200 shadow-md
+   rounded-lg">
+    <h3 class="text-lg font-semibold">Message Us</h3>
+    <!-- Close Icon -->
+    <button id="closeChat" class="text-gray-500 hover:text-gray-700">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Chat Body -->
+  <div class="flex-1 p-4 overflow-y-auto transition-all duration-300 ease-in-out">
+    <!-- Chat messages go here -->
+    <div class="mb-4">
+      <p class="text-gray-500 text-sm mb-3">This is the beginning of your conversation with us.
+        </p>
+      <p class="bg-gray-100 p-3 rounded-lg mb-4">Hello, I'm Oriflame Bot 👋</p>
+      <p class="bg-gray-100 p-3 rounded-lg mb-4">Please, select one of these options</p>
+      <p class="bg-gray-100 p-3 rounded-lg mb-4">Please, select one of these options</p>
+    
+    </div>
+  </div>
+
+  <!-- Chat Footer (Text Area and Send Button) -->
+  <div class="p-4 border-t">
+    <div class=" items-center">
+      <!-- Text Area -->
+      <textarea
+        id="chatInput"
+        class="w-full p-2 border-none rounded-lg resize-none outline-none "
+        rows="2"
+        placeholder="Send a message"
+      ></textarea>
+      <!-- Send Icon -->
+      <button id="sendMessage" class="p-2 flex space-x-60 ">
+        
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.5 22C9.96667 22 8.66667 21.4667 7.6 20.4C6.53333 19.3333 6 18.0333 6 16.5V6C6 4.9 6.39167 3.95833 7.175 3.175C7.95833 2.39167 8.9 2 10 2C11.1 2 12.0417 2.39167 12.825 3.175C13.6083 3.95833 14 4.9 14 6V15.5C14 16.2 13.7583 16.7917 13.275 17.275C12.7917 17.7583 12.2 18 11.5 18C10.8 18 10.2083 17.7583 9.725 17.275C9.24167 16.7917 9 16.2 9 15.5V6H10.5V15.5C10.5 15.7833 10.5958 16.0208 10.7875 16.2125C10.9792 16.4042 11.2167 16.5 11.5 16.5C11.7833 16.5 12.0208 16.4042 12.2125 16.2125C12.4042 16.0208 12.5 15.7833 12.5 15.5V6C12.5 5.3 12.2583 4.70833 11.775 4.225C11.2917 3.74167 10.7 3.5 10 3.5C9.3 3.5 8.70833 3.74167 8.225 4.225C7.74167 4.70833 7.5 5.3 7.5 6V16.5C7.5 17.6 7.89167 18.5417 8.675 19.325C9.45833 20.1083 10.4 20.5 11.5 20.5C12.6 20.5 13.5417 20.1083 14.325 19.325C15.1083 18.5417 15.5 17.6 15.5 16.5V6H17V16.5C17 18.0333 16.4667 19.3333 15.4 20.4C14.3333 21.4667 13.0333 22 11.5 22Z" fill="#999999"/>
+  </svg>
+  
+        
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 20V4L22 12L3 20ZM5 17L16.85 12L5 7V10.5L11 12L5 13.5V17ZM5 17V12V7V10.5V13.5V17Z" fill="#999999"/>
+  </svg>
+  
+      </button>
+    </div>
+  </div>
+</div>
   <!-- online-chat-buttom start -->
-  <div class="online-chat w-14 h-14 rounded-full fixed right-10 bottom-10 z-50 flex items-center justify-center hover:w-[168px] transition-all duration-300 delay-200 group ">
+  <!-- <div class="online-chat w-14 h-14 rounded-full fixed right-10 bottom-10 z-50 flex items-center justify-center hover:w-[168px] transition-all duration-300 delay-200 group ">
     <p class="text-white text-sm hidden group-hover:block opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500">CHAT WITH US</p>
     <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-yc4ipy w-8 h-8 fill-white" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="BubbleHelpFilledIcon">
       <path d="M17.805 15.881q-.14.27-.266.523c-.192.428-.14.768.071 1.052.237.319.723.63 1.513.83a.5.5 0 0 1 .036.96c-.706.237-1.412.33-2.153.185-.653-.127-1.301-.432-1.978-.928a7.2 7.2 0 0 1-3.24.769c-4.032 0-7.288-3.314-7.288-7.386C4.5 7.813 7.756 4.5 11.788 4.5s7.288 3.313 7.288 7.386c0 1.53-.69 2.868-1.271 3.995"></path>
     </svg>
   </div>
-  
+   -->
    <!-- online-chat- buttom end -->
  <!-- burger menu script start -->
+
+ <script src="swiper/swiper-bundle.min.js"></script>
+
 
 <script>
 const burger = document.querySelector('.burger');
@@ -1626,7 +1787,6 @@ burger.addEventListener('click', function () {
  <!-- burger menu script end -->
 
 <!-- swipper script start-->
- <script src="swiper/swiper-bundle.min.js"></script>
  <script>
 var swiper = new Swiper(".mySwiper", {
   pagination: {
@@ -1744,6 +1904,29 @@ function scrollRight() {
 
      </script> 
      <!-- submenu ends -->
+      <!-- chat box starts -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const chatButton = document.getElementById('chatButton');
+  const chatBox = document.getElementById('chatBox');
+  const closeChat = document.getElementById('closeChat');
+
+  // Toggle chat box visibility
+  chatButton.addEventListener('click', function() {
+    chatBox.classList.remove('hidden');
+    chatButton.classList.add('hidden');
+    chatBox.classList.add('translate-y-6');
+  });
+
+  // Close chat box when close icon is clicked
+  closeChat.addEventListener('click', function() {
+    chatBox.classList.add('hidden');
+    chatButton.classList.remove('hidden');
+
+  });
+});
+      </script>
+      <!-- chat box ends -->
 
     
 
